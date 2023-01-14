@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "243608695226",
+    "project_id": "fir-9760e",
+    "storage_bucket": "fir-9760e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243608695226:android:148f8e739d5c7d42156d83",
+        "android_client_info": {
+          "package_name": "com.vasundhara.vipl24.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243608695226-jivcbmbcntajo78c6lu1aoi9728274p9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnri5gBankg7WYj0pxxibQD6f73OowyEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243608695226-jivcbmbcntajo78c6lu1aoi9728274p9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

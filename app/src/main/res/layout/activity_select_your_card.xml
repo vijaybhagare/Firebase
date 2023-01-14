@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Select_Your_Card">
+
+    <TextView
+        android:id="@+id/chooscard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Choose Your Card Type..."
+        android:textColor="@color/black"
+        android:textSize="20dp"></TextView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+         android:layout_marginTop="51dp"
+        android:layout_marginLeft="340dp"
+        android:src="@drawable/ic_down_24"
+        android:layout_height="wrap_content"></ImageView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="190dp"
+        android:layout_below="@+id/chooscard"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/img_verticalcard"
+            android:layout_width="110dp"
+            android:layout_marginLeft="15dp"
+            android:text="vertical"
+            android:src="@drawable/vertical"
+            android:layout_height="200dp"></Button>
+
+
+        <Button
+
+            android:id="@+id/img_horizontalcard"
+            android:layout_width="200dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="Horizontal"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/painth"></Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

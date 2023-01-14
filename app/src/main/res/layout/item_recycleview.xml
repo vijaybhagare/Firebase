@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_height="wrap_content">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/card1"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="80dp"
+    android:layout_marginBottom="80dp"
+    app:cardCornerRadius="20dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@drawable/gradient"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo1">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Vasundhara IT Pvt.Ltd."
+                android:textColor="#F50505"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:id="@+id/img_profile"
+            android:layout_height="150dp"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="0dp"
+            android:elevation="5dp"
+            android:src="@drawable/profile"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tv_empName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:text="Name"
+            android:textColor="#030303"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_empDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/departmentback"
+            android:fontFamily="@font/advent_pro_bold"
+            android:gravity="center"
+            android:text="Department"
+            android:textColor="@color/white"
+            android:textSize="20dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_empEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Email"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_empMobileno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Mobile no"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:id="@+id/tv_bloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Blood group"
+            android:textSize="14dp"></TextView>
+        <TextView
+            android:id="@+id/tv_empAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Address"
+            android:textSize="14dp"></TextView>
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="250dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="Vasundhara IT Pvt. Ltd.
+401, Sneha Construction,Above HDFC Bank, Warje,
+ Pune - 411058, Maharashtra, India."
+            android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

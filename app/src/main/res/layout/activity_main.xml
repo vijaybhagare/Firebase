@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backz"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="Make Profile..."
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/logo1"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Vasundhara IT Pvt.Ltd."
+                    android:textColor="#F10606"
+                    android:textSize="16dp"
+                    android:textStyle="bold"></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/aladin"
+                android:gravity="center"
+                android:text="Create The profile here..."
+                android:textSize="16dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_preview"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/text"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/profile"></de.hdodenhof.circleimageview.CircleImageView>
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn_upload_image"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="20dp"-->
+<!--                    android:layout_marginTop="100dp"-->
+<!--                    android:backgroundTint="#1E64B1"-->
+<!--                    android:text="upload"></Button>-->
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:elevation="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_name"></ImageView>
+
+                        <EditText
+                            android:id="@+id/et_enter_Empname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="20"
+                            android:digits="qwertyuioplkjhgfdsazxcvbnm"
+                            android:layout_below="@+id/img_preview"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:hint="Enter Name"></EditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_baseline_email_24"></ImageView>
+
+                        <EditText
+                            android:id="@+id/et_enter_Email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_preview"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:hint="Email"></EditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_department"></ImageView>
+
+                        <EditText
+                            android:id="@+id/et_enter_Department"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:maxLength="20"
+                            android:digits="qwertyuioplkjhgfdsazxcvbnm"
+                            android:layout_below="@+id/img_preview"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+
+                            android:hint="Department"></EditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_mobile"></ImageView>
+
+                        <EditText
+                            android:id="@+id/et_enter_EmpMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="number"
+                            android:layout_below="@+id/img_preview"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:hint="Mobile NO:"></EditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_blood"></ImageView>
+
+                        <EditText
+                            android:id="@+id/et_enter_Bloodroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/img_preview"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:maxLength="3"
+                            android:digits="aboABO+-"
+                            android:hint="Enter Blood Group"
+
+
+                             ></EditText>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ic_address"></ImageView>
+
+                        <EditText
+                            android:id="@+id/et_enter_EmpAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/et_enter_EmpMobile"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:hint="Enter Address"
+                            ></EditText>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_enter_EmpAddress"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/buttonback"
+                    android:backgroundTint="#F8F7F7"
+                    android:text="save"></Button>
+
+
+                <Button
+                    android:id="@+id/btn_View_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_enter_EmpAddress"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/buttonback"
+                    android:backgroundTint="#F8F7F7"
+                    android:text="View "></Button>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
